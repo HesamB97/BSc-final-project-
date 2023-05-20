@@ -1,0 +1,29 @@
+function [T01,P01,mdot,PR,ethais,gama,R,cp,cx,N1,N2,rhrt,n2]=getinformation
+
+text = 'What is the entering temperature(kelvin)? ';
+T01(1) = input(text);
+text = 'What is the entering pressure(bar)? ';
+P01(1) = input(text);
+text = 'What is the mass flux(kg/s)? ';
+mdot = input(text);
+text = 'What is the pressure ratio? ';
+PR = input(text);
+text = 'What is the isentropic efficiency? ';
+ethais = input(text);
+text = 'What is the entering gama? ';
+gama = input(text);
+text = 'What is the entering R? ';
+R = input(text);
+text = 'What is the entering c_p? ';
+cp = input(text);
+text = 'What is the axial speed? ';
+cx = input(text);
+text = 'What is the rotational speed? ';
+N1 = input(text)/60;
+text = 'What is the second rotational speed? ';
+N2 = input(text)/60;
+text = 'What is the rhrt? ';
+rhrt = input(text);
+text = 'How many sections do you want angles to be calculated? ';
+n2 = input(text)-2;
+end
